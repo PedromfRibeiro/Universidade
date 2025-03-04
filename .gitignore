@@ -1,0 +1,53 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Blender
+*.blend1
+*.blend2
+*.blend~
+__pycache__/
+
+# C++
+*.obj
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+*.pdb
+*.idb
+*.ncb
+*.sdf
+*.ilk
+*.res
+*.lib
+*.exp
+
+# C#
+bin/
+obj/
+*.suo
+*.vs/
+*.csproj.user
+
+# Angular
+node_modules/
+dist/
+coverage/
+.angular/
+
+# PHP
+vendor/
+composer.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+venv/
+.mypy_cache/
+.pytest_cache/
+.tox/
