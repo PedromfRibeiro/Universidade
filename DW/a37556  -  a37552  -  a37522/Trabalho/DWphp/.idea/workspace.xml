@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e5dc535-3947-4119-af51-912d58a34dbd" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dwphp@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dwphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dwphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dwphp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dwphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dwphp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="encomenda: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dwphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dwphp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="stock: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dwphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dwphp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="utilizador: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dwphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dwphp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="venda: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DWphp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_PL/Admin/adminVenda.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-94">
+              <caret line="178" column="20" lean-forward="true" selection-start-line="178" selection-start-column="20" selection-end-line="188" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_PL/Admin/adminStock.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="123" column="61" lean-forward="true" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
+              <folding>
+                <element signature="e#2394#2401#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_Controller/StockController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_BL/Stock.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_DAL/StockDAL.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Controller/JogoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="27" />
+              <folding>
+                <element signature="n#Create_Jogo#0;n#JogoController#0;n#!!top" />
+                <element signature="n#Update_Jogo#0;n#JogoController#0;n#!!top" />
+                <element signature="n#Delete_Jogo#0;n#JogoController#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Controller/MainController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_PL/Admin/AdminMenu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ReadGen</find>
+      <find>$idGen</find>
+      <find>?page=Prod</find>
+      <find>header(</find>
+      <find>ComprarCheckOut</find>
+      <find>Generos</find>
+      <find>\</find>
+      <find>Admin/adminclientes&amp;</find>
+      <find>Admin/adminclientes&amp;asd=1</find>
+      <find>firstpassword</find>
+      <find>password</find>
+      <find>$_POST['password']</find>
+      <find>$_POST['firstpassword']</find>
+      <find>Admin/Admin/adminclientess</find>
+      <find>adminclientes</find>
+      <find>Index.php</find>
+      <find>Update_Encomenda</find>
+      <find>$rowEnco</find>
+      <find>_Encomenda</find>
+      <find>Quantidade</find>
+      <find>Encomenda</find>
+      <find>.php</find>
+      <find>Admin/admingeneros</find>
+      <find>adminVenda</find>
+      <find>Plataforma</find>
+      <find>Gen</find>
+      <find>id</find>
+      <find>disabled&gt;</find>
+      <find>idPlat</find>
+      <find>quan</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$row</replace>
+      <replace>GenerosController::::GetGeneros</replace>
+      <replace>PlataformaController::GetPlataforma</replace>
+      <replace>GenerosController::GetGeneros</replace>
+      <replace>$Finalizada</replace>
+      <replace>$id_utilizador</replace>
+      <replace>Nome</replace>
+      <replace>Encomenda</replace>
+      <replace>$val = array(</replace>
+      <replace>);</replace>
+      <replace>btn btn-lg btn-primary</replace>
+      <replace>Generos</replace>
+      <replace>$GenFetch</replace>
+      <replace>$rowGen</replace>
+      <replace>idGenero</replace>
+      <replace>['idGenero']</replace>
+      <replace>genero</replace>
+      <replace>Update_Gen</replace>
+      <replace>Plat</replace>
+      <replace>Gen</replace>
+      <replace>ImagemGen</replace>
+      <replace>$idGen</replace>
+      <replace>$rowPlat</replace>
+      <replace>$_POST['firstpassword']</replace>
+      <replace>adminclientess</replace>
+      <replace>Index.php?page=MainPage</replace>
+      <replace>$rowUser</replace>
+      <replace>Venda</replace>
+      <replace>quantidade</replace>
+      <replace>idStock</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Pedro Miguel Ferreira Ribeiro &lt;a37556@alunos.ipb.pt&gt;" />
+        <option value="Work on the going" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/_PL/phpTeste.php" />
+        <option value="$PROJECT_DIR$/_BL/Venda.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1cea5c26-baad-4cb4-81ff-12ca08899fab/console.sql" />
+        <option value="$PROJECT_DIR$/_css/Register.css" />
+        <option value="$PROJECT_DIR$/_PL/Login/Register.php" />
+        <option value="$PROJECT_DIR$/_BL/Genero.php" />
+        <option value="$PROJECT_DIR$/_BL/Plataforma.php" />
+        <option value="$PROJECT_DIR$/_DAL/PlataformaDAL.php" />
+        <option value="$PROJECT_DIR$/_css/Produto.css" />
+        <option value="$PROJECT_DIR$/_css/Shopping_cart.css" />
+        <option value="$PROJECT_DIR$/_PL/Admin/Admin_Form.php" />
+        <option value="$PROJECT_DIR$/_css/Admin/AdminJogos.css" />
+        <option value="$PROJECT_DIR$/_PL/Shopping_cart.php" />
+        <option value="$PROJECT_DIR$/_PL/Produto.php" />
+        <option value="$PROJECT_DIR$/_BL/Utilizador.php" />
+        <option value="$PROJECT_DIR$/_DAL/UtilizadorDAL.php" />
+        <option value="$PROJECT_DIR$/_Controller/GenerosController.php" />
+        <option value="$PROJECT_DIR$/_DAL/GeneroDAL.php" />
+        <option value="$PROJECT_DIR$/_PL/ProdutosGen.php" />
+        <option value="$PROJECT_DIR$/_PL/Genero.php" />
+        <option value="$PROJECT_DIR$/_PL/Plataforma.php" />
+        <option value="$PROJECT_DIR$/_Controller/PlataformaController.php" />
+        <option value="$PROJECT_DIR$/_PL/Produtos.php" />
+        <option value="$PROJECT_DIR$/_DAL/Conexao.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/admingames.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/adminencomendas.php" />
+        <option value="$PROJECT_DIR$/_Controller/VendaController.php" />
+        <option value="$PROJECT_DIR$/_DAL/VendaDAL.php" />
+        <option value="$PROJECT_DIR$/_PL/MainPage.php" />
+        <option value="$PROJECT_DIR$/_BL/Encomenda.php" />
+        <option value="$PROJECT_DIR$/_DAL/EncomendaDAL.php" />
+        <option value="$PROJECT_DIR$/_Controller/EncomendaController.php" />
+        <option value="$PROJECT_DIR$/_PL/Profile.php" />
+        <option value="$PROJECT_DIR$/_css/Admin/admingeneros.css" />
+        <option value="$PROJECT_DIR$/_PL/Login/Reset.php" />
+        <option value="$PROJECT_DIR$/_Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/adminVenda.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/AdminJogos.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/adminclientess.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/admingeneros.php" />
+        <option value="$PROJECT_DIR$/_BL/Jogo.php" />
+        <option value="$PROJECT_DIR$/_PL/searchEngine.php" />
+        <option value="$PROJECT_DIR$/_DAL/JogoDAL.php" />
+        <option value="$PROJECT_DIR$/Index.php" />
+        <option value="$PROJECT_DIR$/_Controller/JogoController.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/AdminMenu.php" />
+        <option value="$PROJECT_DIR$/_BL/Stock.php" />
+        <option value="$PROJECT_DIR$/_Controller/MainController.php" />
+        <option value="$PROJECT_DIR$/_DAL/StockDAL.php" />
+        <option value="$PROJECT_DIR$/_PL/Admin/adminStock.php" />
+        <option value="$PROJECT_DIR$/_Controller/StockController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" xdebug_show_addresses="true" hide_empty_superglobals="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="c0d84c4d-fb35-428a-86ea-c37024cf67ff" name="xDebug" />
+    </servers>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="276" />
+    <option name="y" value="-8" />
+    <option name="width" value="400" />
+    <option name="height" value="524" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DWphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DWphp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DWphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DWphp" type="462c0819:PsiDirectoryNode" />
+              <item name="_BL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DWphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DWphp" type="462c0819:PsiDirectoryNode" />
+              <item name="_Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DWphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DWphp" type="462c0819:PsiDirectoryNode" />
+              <item name="_PL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DWphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DWphp" type="462c0819:PsiDirectoryNode" />
+              <item name="_PL" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_PL/Admin" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\DWphp\_css\Admin" />
+      <recent name="C:\xampp\htdocs\DWphp" />
+      <recent name="C:\xampp\htdocs\DWphp\_PL\_Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\DWphp\_PL\Admin" />
+      <recent name="C:\xampp\htdocs\DWphp\_PL" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Web Page.Index.php">
+    <configuration name="Admin/AdminMenu" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="xDebug" start_url="/DWphp/Index.php?page=Admin/adminclientess">
+      <method v="2" />
+    </configuration>
+    <configuration name="Index.php (1)" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="53e2f627-b1a7-4dfa-bfa7-5b83cc034776" server_name="xDebug" start_url="/DWphp/_PL/phpTeste.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="Index.php" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="xDebug" start_url="/DWphp/Index.php?page=MainPage">
+      <method v="2" />
+    </configuration>
+    <configuration name="_PL/Login/Register.php" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="xDebug" start_url="/DWphp/_PL/Login/Register.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="_PL/Login/login.php" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="xDebug" start_url="/DWphp/_PL/Login/login.php">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="xDebug" start_url="/DWphp/_PL/Login/login.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Web Page._PL/Login/login.php" />
+      <item itemvalue="PHP Web Page._PL/Login/Register.php" />
+      <item itemvalue="PHP Web Page.Index.php" />
+      <item itemvalue="PHP Web Page.Index.php (1)" />
+      <item itemvalue="PHP Web Page.Admin/AdminMenu" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e5dc535-3947-4119-af51-912d58a34dbd" name="Default Changelist" comment="" />
+      <created>1558485254827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558485254827</updated>
+      <workItem from="1558485256232" duration="892000" />
+      <workItem from="1558513240580" duration="1033000" />
+      <workItem from="1558514414037" duration="418000" />
+      <workItem from="1558514857047" duration="3361000" />
+      <workItem from="1558533266409" duration="6682000" />
+      <workItem from="1558544418532" duration="2387000" />
+      <workItem from="1558633643698" duration="6345000" />
+      <workItem from="1558732283155" duration="8687000" />
+      <workItem from="1558787588670" duration="3673000" />
+      <workItem from="1558792038756" duration="8958000" />
+      <workItem from="1558802802894" duration="2582000" />
+      <workItem from="1558806970033" duration="812000" />
+      <workItem from="1558807935739" duration="6147000" />
+      <workItem from="1558827706543" duration="5365000" />
+      <workItem from="1558882519095" duration="5869000" />
+      <workItem from="1558963922337" duration="3622000" />
+      <workItem from="1558971294087" duration="635000" />
+      <workItem from="1558985876248" duration="16392000" />
+      <workItem from="1559013075796" duration="558000" />
+      <workItem from="1559038753423" duration="4613000" />
+      <workItem from="1559078961512" duration="465000" />
+      <workItem from="1559117490183" duration="5511000" />
+      <workItem from="1559124646983" duration="6111000" />
+      <workItem from="1559137596381" duration="16560000" />
+      <workItem from="1559226021939" duration="11833000" />
+      <workItem from="1559316818863" duration="3435000" />
+      <workItem from="1559325720575" duration="18013000" />
+      <workItem from="1559493453085" duration="2711000" />
+      <workItem from="1559567720663" duration="3622000" />
+      <workItem from="1559574496163" duration="6486000" />
+      <workItem from="1559584260915" duration="6977000" />
+      <workItem from="1559656486947" duration="13607000" />
+      <workItem from="1559689359352" duration="6090000" />
+      <workItem from="1559722617599" duration="165000" />
+      <workItem from="1559722904239" duration="617000" />
+      <workItem from="1559724463647" duration="3520000" />
+      <workItem from="1559745229564" duration="11918000" />
+      <workItem from="1559767746183" duration="4991000" />
+      <workItem from="1559773111448" duration="7633000" />
+      <workItem from="1559780935148" duration="1073000" />
+      <workItem from="1559811675590" duration="19165000" />
+      <workItem from="1559862305427" duration="2802000" />
+      <workItem from="1559918495295" duration="10328000" />
+      <workItem from="1559931459044" duration="15615000" />
+    </task>
+    <task id="LOCAL-00001" summary="Debug">
+      <created>1558515031844</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558515031844</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Debug">
+      <created>1558516438427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558516438427</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Debug">
+      <created>1558536478555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558536478555</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Debug">
+      <created>1558540479279</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558540479279</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Login and Logout">
+      <created>1558545773825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558545773825</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Login and Logout">
+      <created>1558546088872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558546088872</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Work on going">
+      <created>1558735180474</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558735180474</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Login animado">
+      <created>1558827747465</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558827747465</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Registro animado">
+      <created>1558832971664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558832971664</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Verify email on controller and animated">
+      <created>1558885294529</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558885294529</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Refactor">
+      <created>1558885494304</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558885494304</updated>
+    </task>
+    <task id="LOCAL-00012" summary="UserController Completo, com animações">
+      <created>1558887195886</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558887195886</updated>
+    </task>
+    <task id="LOCAL-00013" summary="UserController Debug part1">
+      <created>1558887302851</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558887302851</updated>
+    </task>
+    <task id="LOCAL-00014" summary="UserController update">
+      <created>1558971328032</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1558971328033</updated>
+    </task>
+    <task id="LOCAL-00015" summary="UserController update">
+      <created>1559005938554</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559005938554</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update project+Usercontroll">
+      <created>1559013129240</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559013129241</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update project+Usercontroll">
+      <created>1559079376753</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559079376753</updated>
+    </task>
+    <task id="LOCAL-00018" summary="adminclientes">
+      <created>1559121326383</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1559121326383</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update algoritm adminclientes">
+      <created>1559144677856</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1559144677856</updated>
+    </task>
+    <task id="LOCAL-00020" summary="rebase">
+      <created>1559145834893</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1559145834893</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update">
+      <created>1559230240848</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1559230240848</updated>
+    </task>
+    <task id="LOCAL-00022" summary="One non-static Crud Complete">
+      <created>1559328988882</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1559328988882</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Muita coisa feita gg&#10;Produtos e produto mais Jogo">
+      <created>1559351432285</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1559351432285</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Muita coisa feita gg&#10;AdminMenu">
+      <created>1559571413393</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1559571413393</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Muita coisa feita gg&#10;AdminMenu">
+      <created>1559574742333</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1559574742333</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Admin menu + Shopping Cart alghoritm">
+      <created>1559607232025</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1559607232025</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Algoritmos de Shppoing Cart&#10;90% funcional">
+      <created>1559671578559</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1559671578559</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Algoritmos de Shppoing Cart&#10;90% funcional">
+      <created>1559696300383</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1559696300383</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Admin Jogos Funcional com Imagens">
+      <created>1559773577511</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1559773577511</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Admin Jogos Funcional com Imagens">
+      <created>1559774798961</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1559774798961</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Organização">
+      <created>1559776222712</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1559776222712</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Mais Implementaçoes">
+      <created>1559834770235</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1559834770235</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Mais Implementaçoes">
+      <created>1559836704176</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1559836704176</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Mudancas Combo-Box's">
+      <created>1559924564274</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1559924564275</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Mudancas Combo-Box's">
+      <created>1559926295554</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1559926295554</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Mudancas Combo-Box's">
+      <created>1559926791273</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1559926791273</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Almost Done">
+      <created>1559936118398</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1559936118398</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Almost Done">
+      <created>1559942618523</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1559942618523</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Almost Done">
+      <created>1559945574198</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1559945574198</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Almost Done">
+      <created>1559945874545</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1559945874545</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Almost Done">
+      <created>1559947759240</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1559947759240</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="268279000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info id="Structure" order="0" sideWeight="0.5024155" side_tool="true" weight="0.20574887" />
+      <window_info id="Favorites" order="1" sideWeight="0.50080514" side_tool="true" weight="0.102118" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49758455" visible="true" weight="0.15351813" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32583067" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" x="345" y="278" width="954" height="339" id="Debug" order="5" sideWeight="0.49946696" weight="0.46623793" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.3279743" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.3279743" />
+      <window_info active="true" anchor="bottom" id="Statistic" order="9" visible="true" weight="0.5487674" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3510467" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3279743" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.46623793" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32850242" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1119403" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" sideWeight="0.5024155" side_tool="true" weight="0.20574887" />
+      <window_info id="Favorites" order="1" sideWeight="0.50080514" side_tool="true" weight="0.102118" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49758455" visible="true" weight="0.15351813" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3268921" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info active="true" anchor="bottom" x="345" y="278" width="954" height="339" id="Debug" order="5" visible="true" weight="0.46623793" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32850242" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32850242" />
+      <window_info anchor="bottom" id="Statistic" order="9" weight="0.54911435" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3510467" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3279743" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32850242" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.1119403" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Debug" />
+    <MESSAGE value="Login and Logout" />
+    <MESSAGE value="Work on going" />
+    <MESSAGE value="Login animado" />
+    <MESSAGE value="Registro animado" />
+    <MESSAGE value="Verify email on controller and animated" />
+    <MESSAGE value="Refactor" />
+    <MESSAGE value="UserController Completo, com animações" />
+    <MESSAGE value="UserController Debug part1" />
+    <MESSAGE value="UserController update" />
+    <MESSAGE value="Update project+Usercontroll" />
+    <MESSAGE value="adminclientes" />
+    <MESSAGE value="update algoritm adminclientes" />
+    <MESSAGE value="rebase" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="One non-static Crud Complete" />
+    <MESSAGE value="Muita coisa feita gg&#10;Produtos e produto mais Jogo" />
+    <MESSAGE value="Muita coisa feita gg&#10;AdminMenu" />
+    <MESSAGE value="Admin menu + Shopping Cart alghoritm" />
+    <MESSAGE value="Algoritmos de Shppoing Cart&#10;90% funcional" />
+    <MESSAGE value="Admin Jogos Funcional com Imagens" />
+    <MESSAGE value="Organização" />
+    <MESSAGE value="Mais Implementaçoes" />
+    <MESSAGE value="Mudancas Combo-Box's" />
+    <MESSAGE value="Almost Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost Done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/_Controller/EncomendaController.php</url>
+          <line>31</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/_Controller/EncomendaController.php</url>
+          <line>32</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/_Controller/EncomendaController.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/_Controller/VendaController.php</url>
+          <line>76</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/_PL/searchEngine.php</url>
+          <line>90</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PhpWebAppRunConfigurationType">
+        <watch expression="$_POST" />
+        <watch expression="$rowEnco" />
+        <watch expression="$_SESSION[&quot;Pass&quot;]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_css/genero.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/ProdutosGen.php" />
+    <entry file="das://1cea5c26-baad-4cb4-81ff-12ca08899fab/schema/dwphp/table/jogo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Produtos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="e#269#303#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Shopping_cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="85" column="125" selection-start-line="85" selection-start-column="110" selection-end-line="85" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Genero.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="n#body#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/phpTeste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Plataforma.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="n#body#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/PlataformaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_BL/Genero.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DAL/GeneroDAL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/GenerosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Produto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="112" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/admingames.php" />
+    <entry file="file://$PROJECT_DIR$/_BL/Utilizador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="94" column="37" lean-forward="true" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DAL/UtilizadorDAL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <folding>
+            <element signature="n#CreateDAL#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#ReadALLDAL#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#UpdateDAL#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#DeleteDAL#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#CreateTable#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#ReadEmailDAL#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#ReadEmailOBJDAL#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#ReadEmailHashDAL#0;n#UtilizadorDAL#0;n#!!top" />
+            <element signature="n#UpdateVerifyDAL#0;n#UtilizadorDAL#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1cea5c26-baad-4cb4-81ff-12ca08899fab/schema/dwphp/table/venda">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DAL/VendaDAL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_BL/Venda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/VendaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="81" column="15" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="15" />
+          <folding>
+            <element signature="e#587#675#0#PHP" />
+            <element signature="e#684#772#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_BL/Encomenda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DAL/EncomendaDAL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/MainPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_css/Admin/admingeneros.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="182" column="18" lean-forward="true" selection-start-line="182" selection-start-column="18" selection-end-line="182" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/EncomendaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="111" column="5" lean-forward="true" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+          <folding>
+            <element signature="e#485#609#0#PHP" />
+            <element signature="e#618#706#0#PHP" />
+            <element signature="e#715#803#0#PHP" />
+            <element signature="e#812#900#0#PHP" />
+            <element signature="n#ComprarCheckOut#0;n#EncomendaController#0;n#!!top" />
+            <element signature="e#1030#1709#0#PHP" />
+            <element signature="e#1275#1709#0#PHP" />
+            <element signature="n#GetIdEnc#0;n#EncomendaController#0;n#!!top" />
+            <element signature="n#CheckCarrinho#0;n#EncomendaController#0;n#!!top" />
+            <element signature="e#2145#2620#0#PHP" />
+            <element signature="e#2230#2620#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Login/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Login/login.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Login/Forgot.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Login/Reset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="393" selection-start-line="393" selection-end-line="393" />
+          <folding>
+            <element signature="e#221#293#0#PHP" />
+            <element signature="e#302#370#0#PHP" />
+            <element signature="e#379#460#0#PHP" />
+            <element signature="e#469#541#0#PHP" />
+            <element signature="e#550#621#0#PHP" />
+            <element signature="e#722#804#0#PHP" />
+            <element signature="e#813#889#0#PHP" />
+            <element signature="n#Register#0;n#UserController#0;n#!!top" />
+            <element signature="n#Checkmail#0;n#!!block;n#Register#0;n#UserController#0;n#!!top" />
+            <element signature="n#pass#0;n#!!block;n#Register#0;n#UserController#0;n#!!top" />
+            <element signature="n#Birth#0;n#!!block;n#Register#0;n#UserController#0;n#!!top" />
+            <element signature="n#VerifyEmail#0;n#UserController#0;n#!!top" />
+            <element signature="n#Reset1form#0;n#UserController#0;n#!!top" />
+            <element signature="n#Reset2part#0;n#UserController#0;n#!!top" />
+            <element signature="n#checkPassword#0;n#!!block;n#Reset2part#0;n#UserController#0;n#!!top" />
+            <element signature="n#AnimatedNotify#0;n#UserController#0;n#!!top" />
+            <element signature="n#UpdateCliente#0;n#UserController#0;n#!!top" />
+            <element signature="n#DeleteCliente#0;n#UserController#0;n#!!top" />
+            <element signature="n#NewCliente#0;n#UserController#0;n#!!top" />
+            <element signature="n#GetOneUtil#0;n#UserController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/adminclientess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="103" column="73" selection-start-line="103" selection-start-column="73" selection-end-line="103" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/admingeneros.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="e#2416#2423#1#HTML" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="e#4579#4586#1#HTML" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/AdminJogos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="207" column="9" lean-forward="true" selection-start-line="197" selection-end-line="207" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_BL/Jogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_css/Styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DAL/Conexao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DAL/JogoDAL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/adminencomendas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="175" selection-start-line="175" selection-end-line="175" selection-end-column="8" />
+          <folding>
+            <element signature="e#1054#5432#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1932">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_js/Utilizador.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_js/Produto.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/searchEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/AdminMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/JogoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="27" />
+          <folding>
+            <element signature="n#Create_Jogo#0;n#JogoController#0;n#!!top" />
+            <element signature="n#Update_Jogo#0;n#JogoController#0;n#!!top" />
+            <element signature="n#Delete_Jogo#0;n#JogoController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_BL/Stock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DAL/StockDAL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/adminVenda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="178" column="20" lean-forward="true" selection-start-line="178" selection-start-column="20" selection-end-line="188" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_PL/Admin/adminStock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="123" column="61" lean-forward="true" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
+          <folding>
+            <element signature="e#2394#2401#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Controller/StockController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

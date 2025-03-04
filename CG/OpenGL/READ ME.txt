@@ -1,0 +1,49 @@
+---------------------------link de pesquisa-------------------------------
+
+
+https://www.opengl.org/resources/libraries/glut/spec3/node76.html------------------------------------glutBitmapCharacter(GLUT_BITMAP_9_BY_15, *c);
+glRasterPos2f(x, y);------------------------------------------------------ //https://docs.microsoft.com/en-us/windows/desktop/opengl/glrasterpos2f
+glutGet(GLUT_WINDOW_WIDTH);----------------------------------------------------//https://www.opengl.org/resources/libraries/glut/spec3/node70.html
+glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);----------------------------https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glClear.xml
+glutSwapBuffers();-------------------------------------------------------------https://www.opengl.org/resources/libraries/glut/spec3/node21.html
+glutPostRedisplay();-----------------------------------------------------------https://www.opengl.org/resources/libraries/glut/spec3/node20.html
+glViewport------------------------------------------------------------------https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glViewport.xml
+glMatrixMode----https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/glMatrixMode.xml
+glOrtho------------------------------------https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/glOrtho.xml
+
+
+main 
+glutInit(&argc, argv);//https://www.opengl.org/resources/libraries/glut/spec3/node10.html
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_ALPHA);//https://www.opengl.org/resources/libraries/glut/spec3/node12.html
+	glutInitWindowSize(Janela_largura, Janela_altura);//https://www.opengl.org/resources/libraries/glut/spec3/node11.html
+	glutCreateWindow("Salta, Salsicha Salta ");  //https://www.opengl.org/resources/libraries/glut/spec3/node16.html
+	loadTextures();
+	glutDisplayFunc(Display); // https://www.opengl.org/resources/libraries/glut/spec3/node46.html
+	glutReshapeFunc(ChangeSize);//https://www.opengl.org/resources/libraries/glut/spec3/node48.html
+	glutKeyboardFunc(HandleKeyboard); //https://www.opengl.org/resources/libraries/glut/spec3/node49.html
+	glutKeyboardUpFunc(keyUp);
+	glutFullScreen();           https://www.opengl.org/resources/libraries/glut/spec3/node24.html
+	glutMainLoop();          https://www.opengl.org/resources/libraries/glut/spec3/node14.html
+
+------------------------------breve explicação-----------------------------------
+int main(int argc, char** argv)
+{
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_ALPHA);
+	glutInitWindowSize(Janela_largura, Janela_altura);
+	glutCreateWindow("Corre, Salsicha Corre ");
+	loadTextures();
+	glutDisplayFunc(Display); //Sets the display callback for the current window.
+	glutReshapeFunc(Reshape); //The reshape function is a function which is called whenever size/shape of the application window changes
+	glutKeyboardFunc(HandleKeyboard);//sets the keyboard callback for the current window.
+	glutKeyboardUpFunc(keyUp); //sets the keyboard up (key release) callback for the current window
+	glutFullScreen();           // making the window full screen
+	glutMainLoop();
+}
+------------------------Outros Links uteis para o desenvolvimento do projeto-----------------
+//https://stackoverflow.com/questions/2181413/texture-mapping-in-opengl-with-soil
+https://www.opengl.org/discussion_boards/showthread.php/137133-get-windows-size-in-opengl
+https://stackoverflow.com/questions/10691603/is-it-possible-to-create-a-fixed-size-glut-window
+https://www.opengl.org/discussion_boards/showthread.php/176158-Texture-Mapping-Loading-an-image-using-SOIL
+https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/glBegin.xml
+https://docs.microsoft.com/en-us/windows/desktop/opengl/glrasterpos2f

@@ -1,0 +1,16 @@
+---
+- name: enable service account gcp
+  shell: gcloud iam service-accounts enable {{ gcloud_service_account }}
+
+
+- name: set project on gcp 
+  shell: gcloud config set project {{ project_id }}
+
+
+- name: enable APIs on gcp
+  shell: gcloud services enable {{ item }}
+  loop:
+    - compute.googleapis.com            # Compute Engine 
+    - cloudfunctions.googleapis.com     # Cloud Functions
+    - container.googleapis.com          # Kubernetes Engine
+    - containerregistry.googleapis.com  # Container Registry

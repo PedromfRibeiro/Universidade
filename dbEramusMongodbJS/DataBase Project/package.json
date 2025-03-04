@@ -1,0 +1,15 @@
+{
+  "name": "node-api",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Pedro Ribeiro",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.16.1",
+    "mongoose": "^4.11.14",
+    "morgan": "~1.9.0"
+  }
+}

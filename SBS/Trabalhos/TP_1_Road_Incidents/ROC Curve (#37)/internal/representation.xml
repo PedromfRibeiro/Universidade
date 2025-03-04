@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="viewRepresentation">
+<entry key="tableID" type="xstring" value="cced3447-0125-48f3-a27f-a0307c642c5f"/>
+<config key="curveSettings">
+<config key="Prediction (luminosity) (Confidence)">
+<config key="x_values">
+<entry key="array-size" type="xint" value="46"/>
+<entry key="0" type="xdouble" value="0.0"/>
+<entry key="1" type="xdouble" value="0.35393893705239354"/>
+<entry key="2" type="xdouble" value="0.5401432340746325"/>
+<entry key="3" type="xdouble" value="0.6490765171503958"/>
+<entry key="4" type="xdouble" value="0.7127779871843196"/>
+<entry key="5" type="xdouble" value="0.761402186204297"/>
+<entry key="6" type="xdouble" value="0.7911797964568413"/>
+<entry key="7" type="xdouble" value="0.8134187712024123"/>
+<entry key="8" type="xdouble" value="0.8315114964191481"/>
+<entry key="9" type="xdouble" value="0.8488503580851866"/>
+<entry key="10" type="xdouble" value="0.8654353562005277"/>
+<entry key="11" type="xdouble" value="0.8756125141349416"/>
+<entry key="12" type="xdouble" value="0.8914436486995854"/>
+<entry key="13" type="xdouble" value="0.9019977384093479"/>
+<entry key="14" type="xdouble" value="0.9099133056916698"/>
+<entry key="15" type="xdouble" value="0.9170750094232943"/>
+<entry key="16" type="xdouble" value="0.9223520542781757"/>
+<entry key="17" type="xdouble" value="0.9280060309084056"/>
+<entry key="18" type="xdouble" value="0.9336600075386355"/>
+<entry key="19" type="xdouble" value="0.9400678477195628"/>
+<entry key="20" type="xdouble" value="0.945344892574444"/>
+<entry key="21" type="xdouble" value="0.9502450056539766"/>
+<entry key="22" type="xdouble" value="0.9555220505088579"/>
+<entry key="23" type="xdouble" value="0.9589144364869958"/>
+<entry key="24" type="xdouble" value="0.9619298906897852"/>
+<entry key="25" type="xdouble" value="0.9645684131172257"/>
+<entry key="26" type="xdouble" value="0.9687146626460611"/>
+<entry key="27" type="xdouble" value="0.9713531850735017"/>
+<entry key="28" type="xdouble" value="0.973237843950245"/>
+<entry key="29" type="xdouble" value="0.975499434602337"/>
+<entry key="30" type="xdouble" value="0.978891820580475"/>
+<entry key="31" type="xdouble" value="0.9815303430079155"/>
+<entry key="32" type="xdouble" value="0.9845457972107049"/>
+<entry key="33" type="xdouble" value="0.9868073878627969"/>
+<entry key="34" type="xdouble" value="0.9883151149641914"/>
+<entry key="35" type="xdouble" value="0.9894459102902374"/>
+<entry key="36" type="xdouble" value="0.9913305691669808"/>
+<entry key="37" type="xdouble" value="0.9935921598190728"/>
+<entry key="38" type="xdouble" value="0.9962306822465133"/>
+<entry key="39" type="xdouble" value="0.9969845457972107"/>
+<entry key="40" type="xdouble" value="0.997738409347908"/>
+<entry key="41" type="xdouble" value="0.9981153411232567"/>
+<entry key="42" type="xdouble" value="0.998869204673954"/>
+<entry key="43" type="xdouble" value="0.9992461364493027"/>
+<entry key="44" type="xdouble" value="0.9996230682246513"/>
+<entry key="45" type="xdouble" value="1.0"/>
+</config>
+<config key="y_values">
+<entry key="array-size" type="xint" value="46"/>
+<entry key="0" type="xdouble" value="0.0"/>
+<entry key="1" type="xdouble" value="0.45291861951427353"/>
+<entry key="2" type="xdouble" value="0.6203664252236898"/>
+<entry key="3" type="xdouble" value="0.7256071580741372"/>
+<entry key="4" type="xdouble" value="0.7835534725181083"/>
+<entry key="5" type="xdouble" value="0.8274392841925863"/>
+<entry key="6" type="xdouble" value="0.8636557307200682"/>
+<entry key="7" type="xdouble" value="0.8917767362590541"/>
+<entry key="8" type="xdouble" value="0.9100979974435449"/>
+<entry key="9" type="xdouble" value="0.9241585002130379"/>
+<entry key="10" type="xdouble" value="0.9377929271410311"/>
+<entry key="11" type="xdouble" value="0.9454622922880273"/>
+<entry key="12" type="xdouble" value="0.9535577332765233"/>
+<entry key="13" type="xdouble" value="0.9578184916915211"/>
+<entry key="14" type="xdouble" value="0.9625053259480187"/>
+<entry key="15" type="xdouble" value="0.9671921602045164"/>
+<entry key="16" type="xdouble" value="0.9723050703025139"/>
+<entry key="17" type="xdouble" value="0.9748615253515126"/>
+<entry key="18" type="xdouble" value="0.9808265871325096"/>
+<entry key="19" type="xdouble" value="0.9825308904985087"/>
+<entry key="20" type="xdouble" value="0.9863655730720068"/>
+<entry key="21" type="xdouble" value="0.9880698764380059"/>
+<entry key="22" type="xdouble" value="0.9906263314870047"/>
+<entry key="23" type="xdouble" value="0.9919045590115041"/>
+<entry key="24" type="xdouble" value="0.9927567106945037"/>
+<entry key="25" type="xdouble" value="0.9936088623775032"/>
+<entry key="26" type="xdouble" value="0.9957392415850022"/>
+<entry key="27" type="xdouble" value="0.9974435449510013"/>
+<entry key="28" type="xdouble" value="0.9978696207925011"/>
+<entry key="29" type="xdouble" value="0.9978696207925011"/>
+<entry key="30" type="xdouble" value="0.9982956966340009"/>
+<entry key="31" type="xdouble" value="0.9987217724755006"/>
+<entry key="32" type="xdouble" value="0.9987217724755006"/>
+<entry key="33" type="xdouble" value="0.9987217724755006"/>
+<entry key="34" type="xdouble" value="0.9991478483170004"/>
+<entry key="35" type="xdouble" value="0.9991478483170004"/>
+<entry key="36" type="xdouble" value="0.9995739241585002"/>
+<entry key="37" type="xdouble" value="0.9995739241585002"/>
+<entry key="38" type="xdouble" value="0.9995739241585002"/>
+<entry key="39" type="xdouble" value="1.0"/>
+<entry key="40" type="xdouble" value="1.0"/>
+<entry key="41" type="xdouble" value="1.0"/>
+<entry key="42" type="xdouble" value="1.0"/>
+<entry key="43" type="xdouble" value="1.0"/>
+<entry key="44" type="xdouble" value="1.0"/>
+<entry key="45" type="xdouble" value="1.0"/>
+</config>
+<entry key="name" type="xstring" value="Prediction (luminosity) (Confidence)"/>
+<entry key="area" type="xdouble" value="0.5642132267881412"/>
+<entry key="max_points" type="xint" value="2000"/>
+</config>
+</config>
+<entry key="enableStaggeredRendering" type="xboolean" value="true"/>
+<entry key="resizeToWindow" type="xboolean" value="true"/>
+<entry key="displayFullscreenButton" type="xboolean" value="true"/>
+<entry key="dataAreaColor" type="xstring" value="rgba(230,230,230,1.0)"/>
+<entry key="backgroundColor" type="xstring" value="rgba(255,255,255,1.0)"/>
+<entry key="gridColor" type="xstring" value="rgba(255,255,255,1.0)"/>
+<entry key="lineWidth" type="xint" value="2"/>
+<entry key="imageWidth" type="xint" value="800"/>
+<entry key="imageHeight" type="xint" value="600"/>
+<entry key="showGrid" type="xboolean" value="true"/>
+<entry key="showArea" type="xboolean" value="true"/>
+<config key="colors">
+<entry key="array-size" type="xint" value="3"/>
+<entry key="0" type="xstring" isnull="true" value=""/>
+<entry key="1" type="xstring" isnull="true" value=""/>
+<entry key="2" type="xstring" isnull="true" value=""/>
+</config>
+<entry key="showLegend" type="xboolean" value="true"/>
+<entry key="enableControls" type="xboolean" value="true"/>
+<entry key="enableEditTitle" type="xboolean" value="true"/>
+<entry key="enableEditSubtitle" type="xboolean" value="true"/>
+<entry key="enableEditXAxisLabel" type="xboolean" value="true"/>
+<entry key="enableEditYAxisLabel" type="xboolean" value="true"/>
+<entry key="showWarningInView" type="xboolean" value="true"/>
+<entry key="hasWarnings" type="xboolean" value="false"/>
+<entry key="ignoreMissingValues" type="xboolean" value="false"/>
+</config>

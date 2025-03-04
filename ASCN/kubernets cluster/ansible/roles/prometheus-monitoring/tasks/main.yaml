@@ -1,0 +1,32 @@
+---
+- name: Create a k8s namespace for monitoring
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: monitoring
+
+
+- name: create prometheus tasks
+  shell: kubectl apply -n monitoring -f "{{ item }}"
+  args:
+    chdir: "{{role_path}}"
+  loop:
+    - ./tasks/prometheus-operator/            
+    - ./tasks/prometheus-cluster-monitoring/
+    - ./tasks/kube-state-metrics/
+
+
+- name: create prometheus grafana
+  shell: kubectl apply -n monitoring -f ./tasks/grafana/
+  args:
+    chdir: "{{role_path}}"
+
+
+#- name: aceder à interface do prometheus 
+#  shell: kubectl -n monitoring port-forward prometheus-k8s-0 9090
+
+#- name: aceder à interface da grafana
+#  shell: kubectl -n monitoring port-forward [ pod name ] 3000

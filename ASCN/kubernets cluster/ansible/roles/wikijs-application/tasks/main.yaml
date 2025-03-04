@@ -1,0 +1,90 @@
+---
+- name: deploy wikijs
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: wikijs
+        namespace: wikijs
+        labels:
+          app: wikijs
+      spec:
+        replicas: 1
+        selector:
+          matchLabels:
+            app: wikijs
+        template:
+          metadata:
+            labels:
+              app: wikijs
+          spec:
+            containers:
+            - name: wikijs
+              image: requarks/wiki:2
+              imagePullPolicy: Always
+              env:
+              - name: DB_TYPE
+                value: "postgres"
+              - name: DB_HOST
+                value: "postgres"
+              - name: DB_PORT
+                value: "5432"
+              - name: DB_NAME
+                value: postgresdb
+              - name: DB_USER
+                value: admin
+              - name: DB_PASS
+                value: test123
+              resources: 
+                requests:
+                  memory: "50Mi"
+                  cpu: "500m"
+                limits:
+                  memory: "500Mi"
+                  cpu: "2000m"
+              ports:
+                - containerPort: 3000
+                  name: http
+                  protocol: TCP
+                  name: wikijs
+
+- name: create HorizontalPodAutoscaler for wikijs
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: autoscaling/v1
+      kind: HorizontalPodAutoscaler
+      metadata:
+        name: wikijs
+        namespace: wikijs
+      spec:
+        maxReplicas: 10
+        minReplicas: 1
+        scaleTargetRef:
+          apiVersion: apps/v1
+          kind: Deployment
+          name: wikijs
+        targetCPUUtilizationPercentage: 90
+
+- name: create service to give external access to wikijs app
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Service
+      metadata:
+        labels:
+          app: wikijs
+        name: wikijs
+        namespace: wikijs
+      spec:
+        type: LoadBalancer
+        ports:
+          - port: 80
+            targetPort: 3000
+            protocol: TCP
+        selector:
+          app: wikijs
+

@@ -1,0 +1,40 @@
+######################
+#   Comandos Úteis   #
+######################
+
+# Para ver todos os recursos criados no namespace wikijs
+kubectl get all --namespace wikijs
+
+# Ver alterações no serviço wikijs
+kubectl get service wikijs --namespace wikijs --watch
+
+# Descrever o cluster criado
+gcloud container clusters describe kubernets-cluster --region europe-west2-c
+
+# Destruir todos os deployments 
+kubectl delete --all deployment --namespace wikijs
+
+# Destruir todos os services no namespace wikijs
+kubectl delete --all services --namespace wikijs
+
+# Ver se o prometheus operator, o prometheus instance e o kube state metrics estão a funcionar
+kubectl get pods -n monitoring
+
+# ver se o kubelet service está a correr
+kubectl -n kube-system get svc
+
+# Nome e zona do cluster
+gcloud container clusters list
+
+# Trocar para outro cluster
+gcloud container clusters get-credentials [custer-name] --zone [zone-name]
+
+# Aceder à interface da grafana
+kubectl -n monitoring port-forward [ pod name ] 3000
+
+# Descrição do deployment do HorizontalPodAutoscaler do wikijs
+kubectl get -n wikijs hpa/wikijs -owide
+kubectl describe hpa -n wikijs
+
+# CPU e Memoria usada no namespace wikijs
+kubectl top pods -n wikijs

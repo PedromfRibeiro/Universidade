@@ -1,0 +1,147 @@
+---
+- name: create config map for postgres
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: ConfigMap
+      metadata:
+        name: postgres-config
+        namespace: wikijs
+        labels:
+          app: postgres
+      data:
+        POSTGRES_DB: postgresdb
+        POSTGRES_USER: admin
+        POSTGRES_PASSWORD: test123
+
+
+- name: deploy postgres database
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: postgres
+        namespace: wikijs
+      spec:
+        replicas: 1
+        selector:
+          matchLabels:
+            app: postgres
+        template:
+          metadata:
+            labels:
+              app: postgres
+          spec:
+            containers:
+              - name: postgres
+                image: postgres
+                imagePullPolicy: "IfNotPresent"
+                ports:
+                  - containerPort: 5432
+                resources: 
+                  requests:
+                    memory: "50Mi"
+                    cpu: "500m"
+                  limits:
+                    memory: "500Mi"
+                    cpu: "2000m"
+                envFrom:
+                  - configMapRef:
+                      name: postgres-config
+                volumeMounts:
+                  - mountPath: /var/lib/postgresql/data
+                    name: postgredb
+            volumes:
+              - name: postgredb
+                persistentVolumeClaim:
+                  claimName: postgres-pv-claim
+
+
+- name: create HorizontalPodAutoscaler for postgres
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: autoscaling/v1
+      kind: HorizontalPodAutoscaler
+      metadata:
+        name: postgres
+        namespace: wikijs
+      spec:
+        maxReplicas: 10
+        minReplicas: 1
+        scaleTargetRef:
+          apiVersion: apps/v1
+          kind: Deployment
+          name: postgres
+        targetCPUUtilizationPercentage: 90
+
+
+- name: create postgres service (give acess to database inside the cluster)
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: postgres
+        namespace: wikijs
+        labels:
+          app: postgres
+      spec:
+        type: NodePort
+        ports:
+         - port: 5432
+        selector:
+         app: postgres
+
+
+- name: create persistent volume claim (PVC) 
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      metadata:
+        name: postgres-pv-claim
+        namespace: wikijs
+        labels:
+          app: postgres
+      spec:
+        storageClassName: manual
+        accessModes:
+          - ReadWriteMany
+        resources:
+          requests:
+            storage: 5Gi
+
+
+- name: create persistent volume (PV) 
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: PersistentVolume
+      metadata:
+        name: postgres-pv-volume
+        namespace: wikijs
+        labels:
+          type: local
+          app: postgres
+      spec:
+        storageClassName: manual
+        capacity:
+          storage: 5Gi
+        accessModes:
+          - ReadWriteMany
+        hostPath:
+          path: /var/lib/data
+
+
+- name: create metrics-server
+  shell: kubectl apply -n kube-system -f ./tasks/metrics-server/
+  args:
+    chdir: "{{role_path}}"
+

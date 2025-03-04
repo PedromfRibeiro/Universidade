@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="hideInWizard" type="xboolean" value="false"/>
+<entry key="generateView" type="xboolean" value="false"/>
+<entry key="maxRows" type="xint" value="2500"/>
+<entry key="jsCode" type="xstring" value="%%00010var body = document.getElementsByTagName('body')[0];%%00010var html = '&lt;div class=&quot;Height&quot;&gt;&lt;/div&gt;';%%00010 html += '&lt;div class=&quot;row&quot;&gt;';%%00010%%00010var rows = knimeDataTable.getRows();%%00010for (var rowID = 0; rowID &lt; knimeDataTable.getNumRows(); rowID++) {%%00010    var row = rows[rowID];%%00010%%00010    html += `&lt;div class=&quot;column&quot;&gt;\%%00010        &lt;div class=&quot;card&quot;&gt;\%%00010            &lt;div class=&quot;container&quot;&gt;\%%00010                &lt;h4&gt;&lt;b&gt;${row.data[0]}&lt;/b&gt;&lt;/h4&gt;\%%00010                 &lt;p class=&quot;scr&quot;&gt;${row.data[1]}&lt;/p&gt;\%%00010            &lt;/div&gt;\%%00010        &lt;/div&gt;\%%00010    &lt;/div&gt;`;%%00010}%%00010%%00010body.innerHTML = html + '&lt;/div&gt;';"/>
+<entry key="jsSVGCode" type="xstring" value=""/>
+<entry key="cssCode" type="xstring" value="h1 {%%00010    font-size: 1.5em;%%00010    font-weight: bold;%%00010}%%00010.success {%%00010    color: #006633;%%00010    font-weight: bold;%%00010}%%00010%%00010.failure {%%00010    color: #990000;%%00010    font-weight: bold;%%00010}%%00010%%00010%%00010%%00010%%00010%%00010%%00010%%00010%%00010%%00010%%00010* {%%00010    box-sizing: border-box;%%00010}%%00010%%00010body {%%00010    font-family: Arial, Helvetica, sans-serif;%%00010    height: 100%;%%00010}%%00010%%00010.Height{%%00010    height: 20px;%%00010}%%00010.scr{%%00010    overflow: scroll;%%00010    height: 50px;%%00010}%%00010%%00010/*serch bar*/%%00010/* Add a black background color to the top navigation bar */%%00010.topnav2 {%%00010    overflow: hidden;%%00010    background-color: #e9e9e9;%%00010    height: 49.5px;%%00010}%%00010/* Style the links inside the navigation bar */%%00010.topnav2 a {%%00010    float: left;%%00010    display: block;%%00010    color: black;%%00010    text-align: center;%%00010    padding: 14px 16px;%%00010    text-decoration: none;%%00010    font-size: 17px;%%00010}%%00010/* Change the color of links on hover */%%00010.topnav2 a:hover {%%00010    background-color: #ddd;%%00010    color: black;%%00010}%%00010/* Style the &quot;active&quot; element to highlight the current page */%%00010.topnav2 a.active {%%00010    background-color: #2196F3;%%00010    color: white;%%00010}%%00010/* Style the search box inside the navigation bar */%%00010.topnav2 .search-container {%%00010    float: left;%%00010    margin-left: 16px;%%00010}%%00010%%00010.topnav2 input[type=text]{%%00010    padding: 6px;%%00010    margin-top: 8px;%%00010    font-size: 17px;%%00010    border: none;%%00010}%%00010%%00010.topnav2 .search-container button {%%00010    float: right;%%00010    padding: 6px 10px;%%00010    margin-top: 8px;%%00010    margin-right: 16px;%%00010    background: #d7d7d7;%%00010    font-size: 17px;%%00010    border: none;%%00010    cursor: pointer;%%00010%%00010}%%00010%%00010.topnav2 .search-container button:hover {%%00010    background: #ccc;%%00010}%%00010/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */%%00010@media screen and (max-width: 600px) {%%00010    .topnav2 .search-container {%%00010        float: none;%%00010    }%%00010    .topnav2 a, .topnav2 input[type=text], .topnav2 .search-container button {%%00010        float: none;%%00010        display: block;%%00010        text-align: left;%%00010        width: 100%;%%00010        margin: 0;%%00010        padding: 14px;%%00010    }%%00010    .topnav2 input[type=text] {%%00010        border: 1px solid #ccc;%%00010    }%%00010}%%00010%%00010%%00010/*Rows*/%%00010%%00010/* Float four columns side by side */%%00010.column {%%00010    float: left;%%00010    width: 25%;%%00010    padding: 0 10px;%%00010}%%00010%%00010/* Remove extra left and right margins, due to padding in columns */%%00010.row {%%00010    margin: 0 -5px;%%00010}%%00010%%00010/* Clear floats after the columns */%%00010.row:after {%%00010    content: &quot;&quot;;%%00010    display: table;%%00010    clear: both;%%00010%%00010}%%00010%%00010/* Style the counter cards */%%00010.card {%%00010    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the &quot;card&quot; effect */%%00010    padding: 16px;%%00010    text-align: center;%%00010    background-color: #f1f1f1;%%00010    margin-bottom: 16px;%%00010    scroll-behavior: smooth;%%00010}%%00010%%00010/* Responsive columns - one column layout (vertical) on small screens */%%00010@media screen and (max-width: 600px) {%%00010    .column {%%00010        width: 100%;%%00010        display: block;%%00010        margin-bottom: 20px;%%00010    }%%00010}"/>
+<config key="dependencies">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<entry key="waitTime" type="xint" value="0"/>
+<config key="outputVariables">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<entry key="customCSS" type="xstring" isnull="true" value=""/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="Diplay output"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="887"/>
+<entry key="y-coordinate" type="xint" value="119"/>
+<entry key="width" type="xint" value="106"/>
+<entry key="height" type="xint" value="15"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="9"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles">
+<config key="style_0">
+<entry key="start" type="xint" value="0"/>
+<entry key="length" type="xint" value="13"/>
+<entry key="fontname" type="xstring" value="Arial"/>
+<entry key="fontstyle" type="xint" value="0"/>
+<entry key="fontsize" type="xint" value="9"/>
+<entry key="fgcolor" type="xint" value="0"/>
+</config>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="factory" type="xstring" value="org.knime.js.base.node.viz.generic3.GenericJSViewNodeFactory"/>
+<entry key="node-name" type="xstring" value="Generic JavaScript View"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME JavaScript Base Views"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.views"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.3.0.v202011211957"/>
+<entry key="node-feature-name" type="xstring" value="KNIME JavaScript Views"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.views.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.3.3.v202105242123"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Generic JavaScript View"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+<config key="port_2">
+<entry key="index" type="xint" value="2"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

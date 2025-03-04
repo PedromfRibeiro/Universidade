@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="targetColumn" type="xstring" value="y"/>
+<entry key="seed" type="xstring" value="1626522477870"/>
+<entry key="maxLevels" type="xint" value="-1"/>
+<entry key="minNodeSize" type="xint" value="-1"/>
+<entry key="minChildSize" type="xint" value="-1"/>
+<entry key="dataFraction" type="xdouble" value="1.0"/>
+<entry key="isDataSelectionWithReplacement" type="xboolean" value="true"/>
+<entry key="hardCodedRootColumn" type="xstring" isnull="true" value=""/>
+<entry key="columnSamplingMode" type="xstring" value="SquareRoot"/>
+<entry key="columnFractionPerTree" type="xdouble" value="1.0"/>
+<entry key="columnAbsolutePerTree" type="xint" value="10"/>
+<entry key="isUseDifferentAttributesAtEachNode" type="xboolean" value="true"/>
+<entry key="nrModels" type="xint" value="100"/>
+<entry key="splitCriterion" type="xstring" value="InformationGainRatio"/>
+<entry key="missingValueHandling" type="xstring" value="XGBoost"/>
+<entry key="useAverageSplitPoints" type="xboolean" value="true"/>
+<entry key="useBinaryNominalSplits" type="xboolean" value="true"/>
+<entry key="fingerprintColumn" type="xstring" isnull="true" value=""/>
+<config key="columnFilterConfig">
+<entry key="filter-type" type="xstring" value="STANDARD"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="38"/>
+<entry key="0" type="xstring" value="age"/>
+<entry key="1" type="xstring" value="default"/>
+<entry key="2" type="xstring" value="housing"/>
+<entry key="3" type="xstring" value="loan"/>
+<entry key="4" type="xstring" value="contact"/>
+<entry key="5" type="xstring" value="month"/>
+<entry key="6" type="xstring" value="day_of_week"/>
+<entry key="7" type="xstring" value="duration"/>
+<entry key="8" type="xstring" value="campaign"/>
+<entry key="9" type="xstring" value="pdays"/>
+<entry key="10" type="xstring" value="previous"/>
+<entry key="11" type="xstring" value="poutcome"/>
+<entry key="12" type="xstring" value="emp.var.rate"/>
+<entry key="13" type="xstring" value="cons.price.idx"/>
+<entry key="14" type="xstring" value="cons.conf.idx"/>
+<entry key="15" type="xstring" value="euribor3m"/>
+<entry key="16" type="xstring" value="nr.employed"/>
+<entry key="17" type="xstring" value="housemaid"/>
+<entry key="18" type="xstring" value="services"/>
+<entry key="19" type="xstring" value="admin."/>
+<entry key="20" type="xstring" value="blue-collar"/>
+<entry key="21" type="xstring" value="technician"/>
+<entry key="22" type="xstring" value="retired"/>
+<entry key="23" type="xstring" value="management"/>
+<entry key="24" type="xstring" value="unemployed"/>
+<entry key="25" type="xstring" value="self-employed"/>
+<entry key="26" type="xstring" value="entrepreneur"/>
+<entry key="27" type="xstring" value="student"/>
+<entry key="28" type="xstring" value="married"/>
+<entry key="29" type="xstring" value="single"/>
+<entry key="30" type="xstring" value="divorced"/>
+<entry key="31" type="xstring" value="basic.4y"/>
+<entry key="32" type="xstring" value="high.school"/>
+<entry key="33" type="xstring" value="basic.6y"/>
+<entry key="34" type="xstring" value="basic.9y"/>
+<entry key="35" type="xstring" value="professional.course"/>
+<entry key="36" type="xstring" value="illiterate"/>
+<entry key="37" type="xstring" value="university.degree"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value=""/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+<entry key="ignoreColumnsWithoutDomain" type="xboolean" value="true"/>
+<entry key="nrHilitePatterns" type="xint" value="-1"/>
+<entry key="saveTargetDistributionInNodes" type="xboolean" value="false"/>
+<entry key="rowSamplingMode" type="xstring" value="Random"/>
+</config>
+<config key="variables">
+<entry key="version" type="xstring" value="V_2019_09_13"/>
+<config key="tree">
+<config key="maxLevels">
+<entry key="used_variable" type="xstring" value="treeDepth"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+<config key="nrModels">
+<entry key="used_variable" type="xstring" value="numModels"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+<config key="splitCriterion">
+<entry key="used_variable" type="xstring" value="splitCriterion"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Execution canceled"/>
+</config>
+<entry key="factory" type="xstring" value="org.knime.base.node.mine.treeensemble2.node.randomforest.learner.classification.RandomForestClassificationLearnerNodeFactory2"/>
+<entry key="node-name" type="xstring" value="Random Forest Learner"/>
+<entry key="node-bundle-name" type="xstring" value="Decisions Tree Ensembles for KNIME"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.treeensembles2"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.3.0.v202011191423"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Ensemble Learning Wrappers"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.ensembles.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.3.0.v202011191423"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Random Forest Learner"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+<config key="port_2">
+<entry key="index" type="xint" value="2"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+<config key="port_3">
+<entry key="index" type="xint" value="3"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

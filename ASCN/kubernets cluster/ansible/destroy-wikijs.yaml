@@ -1,0 +1,10 @@
+---
+- name: destroy infra
+  hosts: localhost  
+  gather_facts: false # é necessário recolher dados sobre o host para poder saber quais os comandos a executar (em que sistema operativo)
+  environment:    
+    GOOGLE_CREDENTIALS: "{{ credentials_file }}"
+
+  roles:
+    - destroy_kubernets-cluster
+    - destroy_network-cluster

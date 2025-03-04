@@ -1,0 +1,19 @@
+### GUIDE PARA O JOGO Corre Salsisha Corre:
+
+* O Jogo esta optimizado para ecras com uma resoluçao de "1366x768".
+* Os controlos são exclusivamente em letra maiúscula.
+* Presse Espaço para iniciar o jogo e para "Correr".
+*
+->Q: Quit Game.
+->S+1: "Select" Skin numero 1.(Apenas no menu inicial)
+->S+2: "Select" Skin numero 2.(Apenas no menu inicial)
+->P : Meter jogo em pausa
+Presse novamente P ou Spaço para voltar ao jogo.
+
+Dificuldade(Automatica): Ao longo do jogo, a velocidade do jogo vai aumentando gradualmente até a velocidade maxima.
+
+//Engenharia Informática 3º Ano
+//Disciplina: Computação Grafica
+//Pedro Miguel Ferreira Ribeiro a37556
+//Fernando Pinto a37536
+//Paulo Gabriel 37555

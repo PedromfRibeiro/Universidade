@@ -1,0 +1,10 @@
+rating_complete.csv
+anime.csv
+anime_with_synopsis.csv
+training_data.csv
+winequality_test.csv
+DataExport.csv
+Data_Export.csv
+winequality_learning.csv
+/Classes/Aula 4
+EPL_Player_Stats_2017_2018.csv

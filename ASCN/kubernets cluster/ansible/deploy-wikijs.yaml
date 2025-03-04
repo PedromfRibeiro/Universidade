@@ -1,0 +1,36 @@
+---
+- name: deploy multilevel application (wikijs and postgress database) on kubernetes cluster  
+  hosts: localhost  
+  gather_facts: true # é necessário recolher dados sobre o host para poder saber quais os comandos a executar (em que sistema operativo)
+  environment:    
+    GOOGLE_CREDENTIALS: "{{ credentials_file }}"
+  pre_tasks:
+    - name: instalation ansible utility on ubuntu host
+      shell: "{{ item }}"
+      loop:
+        - sudo ansible-galaxy collection install google.cloud 
+        - sudo ansible-galaxy collection install community.kubernetes
+        - sudo ansible-galaxy collection install cloud.common
+        - sudo snap install google-cloud-sdk --classic
+        - sudo apt install npm 
+        - sudo apt install python3-pip
+        - sudo pip install requests
+        - sudo pip install kubernetes
+        - sudo snap install kubectl --classic
+      when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+    - name: instalation ansible utility on macOS host
+      shell: "{{ item }}"
+      loop:
+        - brew install --cask google-cloud-sdk
+        - brew install kubectl
+        - brew install docker
+      when: ansible_distribution == 'MacOSX'
+
+  roles:    
+    - requirements
+    - network-cluster   
+    - kubernets-cluster
+    - postgres-database
+    - wikijs-application    
+    - prometheus-monitoring
+    

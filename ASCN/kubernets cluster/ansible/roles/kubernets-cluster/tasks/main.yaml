@@ -1,0 +1,52 @@
+---
+- name: create kubernets cluster  
+  google.cloud.gcp_container_cluster:    
+    name: "{{ cluster_name }}"    
+    initial_node_count: "{{ initial_node_count }}"    
+    location: "{{ zone }}"    
+    network: "{{ network.name }}"    
+    node_config:
+      tags: http-server
+    project: "{{ project_id }}"    
+    auth_kind: serviceaccount    
+    service_account_file: "{{ credentials_file }}"    
+    state: present  
+  register: cluster 
+
+
+- name: connect to cluster
+  shell: gcloud container clusters get-credentials {{ cluster_name }} --zone {{ zone }} --project {{ project_id }}
+
+
+- name: create k8s node pool  
+  google.cloud.gcp_container_node_pool:    
+    name: "node-pool-{{ cluster_name }}"    
+    initial_node_count: "{{ initial_node_count }}"    
+    autoscaling:  # Permite cluster autoscalling. O número de nods aumenta em caso de aumento de requests e diminui caso a afluência ao site baixe
+      enabled: yes
+      max_node_count: 4
+      min_node_count: 1
+    cluster: "{{ cluster }}"    
+    config:      
+      disk_size_gb: "{{ disk_size_gb }}"      
+      disk_type: "{{ disk_type }}"      
+      machine_type: "{{ machine_type }}"    
+    location: "{{ zone }}"    
+    project: "{{ project_id }}"    
+    auth_kind: serviceaccount    
+    service_account_file: "{{ credentials_file }}"    
+    state: present
+
+
+- name: Create a k8s namespace for wikijs 
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: wikijs
+        labels:
+          name: wikijs
+
+  

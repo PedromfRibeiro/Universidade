@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.plat{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 5%;
+}
+
+body {
+    text-align: center;
+}
+h2{
+    font-size:24px ;}
+h3{
+    font-size: 16px;
+}
+
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent h3{
+    font-size: 20px;
+    text-align: center}
+.tabcontent {
+    text-align: justify;
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.left-column img {
+
+    max-height: 100%;
+
+}
+
+@media only screen and (max-width: 1260px) {
+    .plat{display: inline}
+    .left-column img {max-width: 80%;padding-bottom: 50px;}
+
+}

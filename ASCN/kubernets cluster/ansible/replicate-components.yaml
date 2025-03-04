@@ -1,0 +1,10 @@
+---
+- name: replicate wikijs application and postgres database  
+  hosts: localhost  
+  gather_facts: true # é necessário recolher dados sobre o host para poder saber quais os comandos a executar (em que sistema operativo)
+  environment:    
+    GOOGLE_CREDENTIALS: "{{ credentials_file }}"
+
+  roles:    
+    - replicate-wikijs-postgres 
+    

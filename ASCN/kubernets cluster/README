@@ -1,0 +1,318 @@
+
+------------------------------------------------------------------------------
+
+Ponto da situação:
+    
+    -> A aplicação já está a funcionar, é possível aceder pela internet
+
+------------------------------------------------------------------------------
+
+
+Por fazer:
+
+
+*** Adicionar secret file para segurança da base de dados
+https://www.youtube.com/watch?v=o36yTfGDmZ0
+https://cloud.google.com/kubernetes-engine/docs/concepts/secret#yaml-file
+
+*** Autoscaling (cluster, VPA e HPA)
+ 
+*** Benchmarking (procurar por load testing)
+Criar uma conta no k6 (é possível ter uma free account e correr até 50 cloud testes)
+https://k6.io/blog/integrating-k6-with-google-cloud-build/
+https://tsh.io/blog/how-to-do-performance-testing-using-k6/
+https://medium.com/ssense-tech/benchmarking-microservices-on-kubernetes-ffda76696e02
+https://www.youtube.com/watch?v=GL2v81xYuAQ
+https://www.youtube.com/watch?v=Eia2l3bY5jU
+https://www.youtube.com/watch?v=ukoC319npUw
+https://www.youtube.com/watch?v=Hu1K2ZGJ_K4
+https://www.youtube.com/watch?v=eCv1XshEpDI
+https://medium.com/swlh/beginners-guide-to-load-testing-with-k6-85ec614d2f0d
+
+Vantagens e desvantagens k6 and jmeter:
+https://www.youtube.com/watch?v=noZppBruOSY
+
+
+*** Destroy cluster
+
+*** Tasks para destruir o cluster:
+https://faun.pub/automation-deploying-an-app-in-gke-using-ansible-4b6687967ac3
+
+*** Copiar as credenciais para a minha máquina usando o ansible (é necessário)
+
+* Escolher zona e região para gastar menos recursos
+
+*** SSL certificate for secure conections
+https://medium.com/avmconsulting-blog/how-to-secure-applications-on-kubernetes-ssl-tls-certificates-8f7f5751d788
+https://www.youtube.com/watch?v=ceeKC4izk4E
+https://www.youtube.com/watch?v=hoLUigg4V18
+https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-multi-ssl
+https://kubernetes.io/blog/2015/07/strong-simple-ssl-for-kubernetes/
+
+** Ver o que fazer com o ficheiro credenciais
+
+** Configuring Firewall Rules in GCP
+https://avinetworks.com/docs/21.1/gcp-firewall-rules/
+
+*** Create service copy to machine and use in ansible
+
+*** Replicação da base de dados
+
+
+A melhorar:
+
+-> ter cluster em diferentes zonas do mundo para que caso ocorra um problema numa zona do mundo e por consequência o cluster falhe por causa desse problema (desastre natural por exemplo), a aplicação continua disponível.
+
+-> o load balancer não é um spof:
+https://stackoverflow.com/questions/56593155/is-google-cloud-load-balancer-a-single-point-of-failure-can-we-have-a-standby
+https://thenewstack.io/kubernetes-high-availability-no-single-point-of-failure/
+
+-> vantagens do uso do load balancer:
+https://levelup.gitconnected.com/load-balancing-on-google-cloud-platform-gcp-why-and-how-a8841d9b70c
+
+Por ver: https://thenewstack.io/kubernetes-high-availability-no-single-point-of-failure/
+
+
+------------------------------------------------------------------------------
+
+Instalações necessárias (macOs):
+
+1. Usar os comandos do gcloud no terminal da minha máquina
+brew install --cask google-cloud-sdk
+
+
+2. brew install kubectl 
+
+gcloud components install kubectl
+
+
+Caso não consiga conectar ao cluster kubernets tenho de fazer primeiro : gcloud auth login
+
+
+Para conseguir correr imagens nos containers preciso de colocar as imagens no gcr relativas ao meu projecto.
+
+Instalar o docker [ macOS ]: https://apple.stackexchange.com/questions/373888/how-do-i-start-the-docker-daemon-on-macos
+eval "$(docker-machine env default)"
+
+
+Copiar as imagens dos containers que preciso para o gcr do meu projecto
+https://www.youtube.com/watch?v=9CDb9ZSsfV4
+
+    Passo1: docker pull postgres:latest
+            docker pull requarks/wiki:latest
+    Passo2: 
+    gcloud auth configure-docker
+    docker tag postgres gcr.io/kubernets-cluster-335010/postgres
+    docker push gcr.io/kubernets-cluster-335010/postgres
+
+aux: https://cloud.google.com/container-registry/docs/advanced-authentication#gcloud-helper
+https://www.cloudsavvyit.com/4866/how-to-push-and-pull-docker-images-from-google-container-registry/
+deploy images in gke:
+https://cloud.google.com/run/docs/deploying#yaml_1
+
+
+Resolver o problema dos containers não ficar running [por default após a criação do container, esse container para de correr]:
+https://stackoverflow.com/questions/31870222/how-can-i-keep-a-container-running-on-kubernetes
+
+aux: https://coderedirect.com/questions/518084/gke-cluster-cant-pull-errimagepull-from-gcr-registry-in-same-project-gitlab
+
+
+Instalar postgres no gke:
+https://phoenixnap.com/kb/postgresql-kubernetes
+
+Necessário fazer a seguinte alteração para funcionar o postgres no gke:
+https://tipsfordev.com/mkdir-mnt-data-read-only-file-system-back-off-restarting-failed-postgres-container
+
+implantar o PostgreSQL altamente disponível com o GKE [Pode vir a ser necessário para melhorar a versão atual]:
+https://cloud.google.com/architecture/deploying-highly-available-postgresql-with-gke#costs
+
+
+
+Verificar que o pod postgres está a funcionar:
+https://stackoverflow.com/questions/38485771/how-to-ssh-to-docker-container-in-kubernetes-cluster
+comando : kubectl exec -it postgres-6df8ccb5d8-gsvls -- /bin/bash
+
+
+Deployment do wordpress no gke:
+https://www.youtube.com/watch?v=xguheW_GEi4
+
+Problema de conection refused when running docker
+https://stackoverflow.com/questions/44014698/docker-failed-to-connect-to-localhost-port-4000-connection-refused
+
+
+Dockerfile wikijs:
+https://hub.docker.com/r/requarks/wiki/dockerfile
+
+Dockerfile postgres:
+https://docs.docker.com/samples/postgresql_service/
+
+------------------------------------------------------------------------------
+
+Para Testar
+
+1. Enable service accounts
+
+2. Enable this API s
+https://console.cloud.google.com/apis/library/cloudfunctions.googleapis.com?project=kubernets-cluster-335010
+https://console.cloud.google.com/apis/library/compute.googleapis.com?project=kubernets-cluster-335010
+https://console.cloud.google.com/apis/library/container.googleapis.com?project=kubernets-cluster-335010
+https://console.cloud.google.com/apis/library/containerregistry.googleapis.com?_ga=2.185140780.444318743.1639776243-91976998.1639340631&_gac=1.204811812.1639602358.EAIaIQobChMIz_rjmNvm9AIV_4FQBh2MuwbaEAAYASAAEgKsPfD_BwE&project=kubernets-cluster-335010
+
+3. Correr o playbook para criação do cluster kubernets
+ansible-playbook ansible/deploy-wikijs.yaml -i ansible/inventory/gcp.yaml 
+ps: Em linux fazer sudo antes do comando ansible-playbook
+
+
+Quando não precisar: 
+1. desactivar a service account
+2. Desactivar as APIs
+3. Destruir o cluster
+
+------------------------------------------------------------------------------
+
+
+Executar a script com os requisitos necessários. Correr o seguinte comando:
+    bash requisitos.sh
+
+Necessário guardar as credenciais em /Users/[User]
+
+
+Necessário automatizar o seguinte (TIVE QUE FAZER À MÃO!!!)
+
+Enable Computer Engine API
+https://console.cloud.google.com/apis/library/compute.googleapis.com?project=kubernets-cluster-335010
+
+Enable Kubernets Engine API
+https://console.cloud.google.com/apis/library/container.googleapis.com?project=kubernets-cluster-335010
+
+
+deploy app in Kubernets 
+https://faun.pub/automation-deploying-an-app-in-gke-using-ansible-4b6687967ac3
+
+
+
+No nome das variáveis não usar o simbolo '_' dá um erro: "... Must be a match of regex ..."
+https://github.com/hashicorp/terraform/issues/20884
+
+
+Load balancer on gke
+https://medium.com/google-cloud/choosing-the-right-load-balancer-9ec909148a85
+https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer
+https://cloud.google.com/kubernetes-engine/docs/concepts/ingress
+https://medium.com/google-cloud/container-load-balancing-on-google-kubernetes-engine-gke-4cbfaa80a6f6
+
+
+Escalabilidade com partitioning
+https://dzone.com/articles/distributed-balanced-partition-queues-assignment-u
+
+
+Definir variáveis de ambliente de containers usando Secret data
+https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/
+https://stackoverflow.com/questions/59203583/how-can-i-create-a-kubernetes-secret-with-ansible
+
+
+Deploy wiki-js on kubernets
+https://paranoiaque.fr/en/2019/07/04/wiki-js-and-kubernetes/
+https://computingforgeeks.com/install-and-configure-wikijs-on-kubernetes-cluster/
+
+
+Optimizar o processo de testing
+https://blog.container-solutions.com/how-to-create-a-kubernetes-cluster-in-under-60-seconds
+
+
+Resize Cluster Kubernets
+https://serverfault.com/questions/966370/how-to-stop-hibernate-gke-cluster-in-gcp
+
+
+Container Register [ contém as imagens dos containers disponíveis ]
+https://console.cloud.google.com/gcr/images/google-containers/GLOBAL
+
+
+Criar o ficheiro de deployment:
+kubectl create deployment wordpress --image wordpress --dry-run=client -o yaml > wordpressDeploy.yaml
+
+Criar o ficheiro de serviço:
+kubectl expose deployment wordpress --type LoadBalancer --port 80 --dry-run=client -o yaml > wordpressService.yaml
+
+Instalar o helm no cluster:
+https://devopscube.com/install-configure-helm-kubernetes/
+https://stackoverflow.com/questions/61976133/install-helm-v3-in-kubernetes-gke
+https://helm.sh/docs/intro/install/
+
+
+https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app
+
+Instalar o wikijs a partir do helm:
+https://artifacthub.io/packages/helm/k8s-at-home/wikijs
+
+
+Automatizar a instalação a partir do helm
+https://www.ansible.com/blog/automating-helm-using-ansible
+
+
+Scaling proporcicional à percentagem de uso de recursos
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#scaling-a-deployment
+
+
+Deploying and publishing frontend app on GKE:
+https://www.youtube.com/watch?v=xnsN_nCD6so
+
+
+Deployment postgres:
+kubectl apply -f postgres-configmap.yaml
+kubectl apply -f postgres-deployment.yaml
+kubectl apply -f postgres-service.yaml
+kubectl apply -f postgres-storage.yaml
+
+Deploy wiki:
+kubectl apply -f wikijs-deployment.yaml 
+kubectl apply -f wikijs-service.yaml
+
+
+Deploy elasticsearch on gke:
+https://www.youtube.com/watch?v=IO_uXPKQht0
+
+
+
+Sem acesso externo ao gke:
+https://stackoverflow.com/questions/31509722/how-do-i-enable-http-traffic-for-gce-instance-templates
+https://stackoverflow.com/questions/35590641/what-is-the-gcloud-command-to-allow-http-traffic-on-a-vm-instance-its-not-cre
+https://cloudplatform.googleblog.com/2015/07/Connection-Refused.html
+https://stackoverflow.com/questions/44620723/cant-connect-to-port-80-on-google-cloud-compute-instance-despite-firewall-rule
+https://www.youtube.com/watch?v=sPbBVim9Zbk
+
+
+
+Caso precise de correr multiplos ficheiros com tasks num main.yaml de um role
+---
+- include: "{{ item }}"
+  with_fileglob:
+    - ansible/roles/prometheus-monitoring/tasks/prometheus-operator/*.yaml
+
+
+------------------------------------------------------------------------------
+
+Relatório
+
+Secret:
+https://cloud.google.com/kubernetes-engine/docs/concepts/secret#yaml-file
+https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/
+
+
+Considerar várias zonas na criação do cluster por conseguir dar resposta positiva a falhas
+
+Ativar o cluster autoscaling:
+https://www.youtube.com/watch?v=jM36M39MA3I
+https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-autoscaler
+
+Monitoring prometheus:
+https://www.youtube.com/watch?v=TrGgvkJfslw&list=PLHq1uqvAteVuEXCrRkPFWLXRKWNLOVUHn&index=4
+https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/monitoring/prometheus/kubernetes/1.18.4/readme.md
+
+Instalar pela primeira vez grafana:
+https://grafana.com/docs/grafana/latest/getting-started/getting-started/
+
+Componentes da aplicação:
+https://docs.microsoft.com/en-us/hybrid/app-solutions/pattern-highly-available-kubernetes
+
+
